@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Title</title>
     <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
-    
+    <h1 id="title">Favorite Genres of Literature</h1>
+    <main>
+        <p id="description">This is a form for discovering your favorite genres of literature.</p>
+        <form id="survey-form">
+            <label for id="name-label">Name</label>
+            <input id="name" type="text" placeholder="Enter your name." required>
+            <label for id="email-label">Email</label>
+            <input id="email" type="email" placeholder="Enter your email" required>
+            <label for id="number-label">Number</label>
+            <input id="number" type="number" min="7" max="7" placeholder="Enter your number.">
+            <select name="dropdown" id="dropdown">
+                <option value="choose-option">--Please choose an option--</option>
+                <option value="poetry">Poetry</option>
+                <option value="literary-fiction">Literary Fiction</option>
+                <option value="essay">Essay</option>
+                <option value="literary-criticism">Literary Criticism</option>
+                <option value="short-story">Short Story</option>
+                <option value="play">Play</option>
+                <option value="non-fiction">Non-Fiction</option>
+            </select>
+            <p>Which do you prefer?</p>
+            <label>Fiction<input type="radio" name="radio" value="Fiction"></label>
+            <label>Non-Fiction<input type="radio" name="radio" value="Non-Fiction"></label>
+            <hr>
+            <p>Have you tried any of these? Select all that apply.</p>
+            <label>Biography<input type="checkbox" name="checkbox" value="Biography"></label>
+            <label>Magical Realism<input type="checkbox" name="checkbox" value="Magical Realism"></label>
+            <label>Mythology<input type="checkbox" name="checkbox" value="Mythology"></label>
+            <label>Horror<input type="checkbox" name="checkbox" value="Horror"></label>
+            <label>Literary Realism<input type="checkbox" name="checkbox" value="Literary Realism"></label>
+            <label>History<input type="checkbox" name="checkbox" value="History"></label>
+            <hr>
+            <textarea placeholder="Add your own areas of interest!"></textarea>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+    </main>
 </body>
+
 </html>
+<!--- User Story completed 1 through 16 --->
